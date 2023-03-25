@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Moja strona</title>
+        <title>Zadania z 24.03.2023r.</title>
+        <link rel="stylesheet" href="Zadania.css">
         <script src="Zadania.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet"> <!-- dodalem jakis font z google -->
     </head>
 
-    <body>
+    <body onload="Zadanie5Los()">
         <h1>Zadanie 1</h1><hr>
         <h1 id="tekst">Witaj!</h1>
         <button onclick="zmienTekst()">Kliknij mnie</button><hr>
@@ -15,14 +19,17 @@
         <button onclick="wypParz()">Kliknij aby wypisać</button><hr>
 
         <h1>Zadanie 3</h1>
-        Podaj pierwszą l. całk.:<input type="number" id="Z3L1"><br>
-        Podaj drugą l. całk.:<input type="number" id="Z3L2"><br>
+        Podaj pierwszą l. całk.:<input type="number" id="Z3L1"><br><br>
+        Podaj drugą l. całk.:<input type="number" id="Z3L2"><br><br>
         <button onclick="Zadanie3()">Oblicz</button><br>
         <p>Wynik:</p><p id="Z3W"></p><hr>
 
         <h1>Zadanie 4 jest w drugim pliku</h1><hr>
-
-        <h1>Zadanie 5</h1>
-        
+        <div>
+            <h1>Zadanie 5</h1>
+            <input type="number" id="podLiczHTML" placeholder="Spróbuj zgadnąć liczbę:"><br>
+            <button onclick="Zadanie5()">*klik*</button><br>
+            <p id="wynikZad5"></p>
+        </div>
     </body>
 </html>

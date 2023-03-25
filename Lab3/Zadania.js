@@ -1,3 +1,5 @@
+var losLicz = 0
+
 function zmienTekst() {
     document.getElementById("tekst").innerHTML = "Witaj na mojej stronie!";
 }
@@ -22,10 +24,30 @@ function Zadanie3() {
 }
 
 /* function Zadanie5() {
-losuje liczbe z przedzialu 0-100
-uzytkownik wprowadza liczbe w inputa mającego obok przycisk sprawdzający
+losuje liczbe z przedzialu 0-100                                                                                                   ~~~~~~
+uzytkownik wprowadza liczbe w inputa mającego obok przycisk sprawdzający                                                           ~~~~~~
 komunikat o tym czy liczba podana jest wieksza/mniejsza/taka sama jak wylosowana uprzednio liczba
 Po zgadnieciu strona ma zostac przeladowana aby rozpoczac nowa gre
 (tutaj ustawilbym po zgadnieciu timer na 10 sekund do resetu, aby mozna bylo przeczytac o wygranej i o przeladowaniu za x sekund)
 }
 */
+
+function Zadanie5Los() {
+    losLicz = Math.floor(Math.random() * 100);
+}
+
+function Zadanie5() {
+    wylosLicz = losLicz;
+    podLiczJS = document.getElementById("podLiczHTML").value;
+    if (podLiczJS > losLicz) {
+        document.getElementById("wynikZad5").innerHTML = "Podana liczba jest większa od wylosowanej liczby"
+    }
+    else if (podLiczJS < losLicz) {
+        document.getElementById("wynikZad5").innerHTML = "Podana liczba jest mniejsza od wylosowanej liczby"
+    }
+    else {
+        document.getElementById("wynikZad5").innerHTML = "Brawo! Zgadłeś wylosowaną liczbę. Strona przełąduje się za 10 sekund abyś mógł zagrać ponownie! :)"
+        setTimeout(() => window.location.reload(), 10000);
+    }
+    // dodaj reloada po 10 sekundach
+}
