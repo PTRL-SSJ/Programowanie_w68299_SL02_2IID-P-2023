@@ -20,3 +20,12 @@ function Zadanie3() {
     document.getElementById("Z3W").innerHTML = Z3W
 
 }
+
+/* function Zadanie5() {
+losuje liczbe z przedzialu 0-100
+uzytkownik wprowadza liczbe w inputa mającego obok przycisk sprawdzający
+komunikat o tym czy liczba podana jest wieksza/mniejsza/taka sama jak wylosowana uprzednio liczba
+Po zgadnieciu strona ma zostac przeladowana aby rozpoczac nowa gre
+(tutaj ustawilbym po zgadnieciu timer na 10 sekund do resetu, aby mozna bylo przeczytac o wygranej i o przeladowaniu za x sekund)
+}
+*/
