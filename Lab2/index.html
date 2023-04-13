@@ -4,14 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <title>My Website</title>
-  <style>
-    * {box-sizing: border-box;}
-    html {margin: 0px; padding: 0px; font-family: sans-serif;}
-    h1 {font-size: 50px;}
-    h4 {font-size: 30p;}
-    header {display: flex; background-color: lightgray; position: absolute; width: 100%;}
-  </style>
-  <!-- ZADANIE 3 A B C ZROBIONE -->
+  <link rel="stylesheet" href="css/style.css">
  </head>
 
 <body>
@@ -21,15 +14,17 @@
         <h2>Jan Kowalski</h2>
       </div>
     </div>
-    <nav>
-      <ul>
-        <li>
-          <a href="./index.html">Strona główna</a>
-        </li>
-        <li><a href="./seriale/index.html">Ulubione seriale</a></li>
-        <li><a href="./ksiazki/index.html">Ulubione książki</a></li>
-      </ul>
-    </nav>
+    <div class="z4container">
+      <nav>
+        <ul>
+          <li class="z4li">
+            <a href="./index.html">Strona główna</a>
+          </li>
+          <li class="z4li"><a href="./seriale/index.html">Ulubione seriale</a></li>
+          <li class="z4li"><a href="./ksiazki/index.html">Ulubione książki</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -45,9 +40,9 @@
 
     </section>
     <article>
-      <h4>Kilka słów o mnie</h4>
+      <h4 class="article-element">Kilka słów o mnie</h4>
 
-      <p>
+      <p class="article-element">
         Jestem absolwentem <b>Liceum Ogólnokształcącego w Rzeszowie</b>, które
         ukończyłem z <i>wyróżnieniem. </i>
         W wolnych chwilach lubie czytać książki kryminalne. Lubię podróżować
@@ -60,8 +55,8 @@
     https://devdocs.io/html/element/ul
     tam znajduje się przykład zagnieżdżania list-->
     <article>
-      <h4>Moje ulubione seriale</h4>
-      <ul>
+      <h4 class="article-element">Moje ulubione seriale</h4>
+      <ul class="article-element">
         <li>Gra o tron</li>
         <li>Moda na sukces</li>
         <li>Sanatorium miłości</li>
@@ -69,10 +64,10 @@
     </article>
 
     <article>
-      <h4>
+      <h4 class="article-element">
         Ranking najlepszych powieści kryminalnych
       </h4>
-      <ol>
+      <ol class="article-element">
         <li>Projekt Riese.</li>
         <li>Zło kryje się w mroku.</li>
         <li>Zemsta.</li>
@@ -81,8 +76,8 @@
 
     <!-- ZADANIE 3 -->
     <article>
-      <h4>Moje ulubione seriale</h4>
-      <ul>
+      <h4 class="article-element">Moje ulubione seriale</h4>
+      <ul class="article-element">
         <li>
           Gra o tron
           <a href="https://www.filmweb.pl/serial/Gra+o+tron-2011-476848">Gra o tron</a>
@@ -102,9 +97,9 @@
     <!-- ZADANIE 4 -->
     <!-- Pytanie do studentów: Jak sprawić aby tablica posiadała ramki?-->
     <article>
-      <h4>Moje ścieżka nauki</h4>
+      <h4 class="article-element">Moje ścieżka nauki</h4>
 
-      <table>
+      <table class="article-element">
         <tr>
           <th>Data</th>
           <th>Szkoła</th>
@@ -126,8 +121,8 @@
 
     <!--    ZADANIE 4.1 -->
     <article>
-      <h4>Pusta tabelka</h4>
-      <table>
+      <h4 class="article-element">Pusta tabelka</h4>
+      <table class="article-element">
         <tr>
           <td></td>
           <td rowspan="2"></td>
@@ -154,7 +149,7 @@
     </article>
     <!-- ZADANIE 5 -->
     <article>
-      <div>
+      <div class="article-element">
         <h4>Moje ulubione seriale</h4>
 
         <ul>
@@ -173,15 +168,15 @@
           </li>
         </ul>
       </div>
-      <img
+      <img  class="article-element"
         src="https://i0.wp.com/mobirank.pl/wp-content/uploads/2020/03/moda-na-sukces-serial-1024x591-1.jpg?w=1024&ssl=1"
         height="200" />
     </article>
   </main>
 
   <article>
-    <h4>Moje ulubione seriale</h4>
-    <div>
+    <h4 class="article-element">Moje ulubione seriale</h4>
+    <div class="article-element">
       <!-- ZADANIE 8 -->
 
       <h4>Your news form</h4>
