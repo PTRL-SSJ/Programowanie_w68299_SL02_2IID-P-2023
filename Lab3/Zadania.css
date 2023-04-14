@@ -8,5 +8,9 @@ html {
 }
 
 #divZ4 {
-    height: 300px;
+    padding-top: 25%;
+}
+
+footer {
+    padding: 50px 0px 20px 0px;
 }
