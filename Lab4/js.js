@@ -49,10 +49,10 @@ car.task3Vmore()
 car.task3CarInfo()
 car.task4CarAge()
 
-// Zadanie 5
+// Zadanie 5,6
 const rectangle = {
-    a = 5,
-    b = 6,
+    a: document.getElementById("bok1").value,
+    b: document.getElementById("bok2").value,
     task5Area: function() {
         console.log(a*b)
     },
@@ -61,10 +61,10 @@ const rectangle = {
     },
     task5IfSquare: function() {
         if (a == b) {
-            console.log("Prostokąt nie jest kwadratem!")
+            console.log("Prostokąt jest kwadratem!")
         }
         else {
-            console.log("Prostokąt jest kwadratem!")
+            console.log("Prostokąt nie jest kwadratem!")
         }
     }
 }
