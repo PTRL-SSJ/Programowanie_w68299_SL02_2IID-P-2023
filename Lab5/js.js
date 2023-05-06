@@ -74,10 +74,12 @@ function task3() {
 function Fibon() {
     const number = document.getElementById("4Liczba").value;
     let n1 = 0, n2 = 1, nextTerm;
-    let Fibo = ""
+    var Fibo = ""
     for (let i = 1; i <= number; i++) {
         Fibo += n1 + ", "
         nextTerm = n1 + n2;
         n1 = n2;
         n2 = nextTerm;
+    }
+    document.getElementById("4Fibo").innerHTML = Fibo
 }
